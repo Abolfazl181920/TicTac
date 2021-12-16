@@ -1,10 +1,13 @@
 import './App.css';
 import Board from './Board';
+import Square from './Square';
 
 function App() {
   return (
     <main>
-      <Board></Board>
+      <Board>
+        <Square />
+      </Board>
     </main>
   );
 }
