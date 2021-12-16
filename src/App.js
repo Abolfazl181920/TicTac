@@ -10,7 +10,9 @@ const App = () => {
   const [squares, setSquares] = useState(defaultSquares());
 
   const handleSquareClick = () => {
-    console.log('some');
+    let newSquares = squares;
+    newSquares[index] = 'x';
+    setSquares([...newSquares]);
   }
 
   return (
