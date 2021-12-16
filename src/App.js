@@ -2,7 +2,7 @@ import './App.css';
 import Board from './Board';
 import Square from './Square';
 
-function App() {
+const App = () => {
   return (
     <main>
       <Board>
