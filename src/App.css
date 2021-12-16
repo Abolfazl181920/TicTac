@@ -2,6 +2,8 @@
 :root {
   --white: #fff;
   --black: #123;
+  --win: #5a5;
+  --lose: #a55;
 }
 
 body {
@@ -36,8 +38,8 @@ div.result{
   padding: 10px;
 }
 div.result.green{
-  background-color: #5a5;
+  background-color: var(--win);
 }
 div.result.red{
-  background-color: #a55;
+  background-color: var(--lose);
 }
