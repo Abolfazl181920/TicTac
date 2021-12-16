@@ -9,11 +9,15 @@ const App = () => {
 
   const [squares, setSquares] = useState(defaultSquares());
 
+  const handleSquareClick = () => {
+    console.log('some');
+  }
+
   return (
     <main>
       <Board>
         {
-          squares.map(square => <Square />)
+          squares.map((square,index) => <Square onClick={() => handleSquareClick(index)} />)
         }
       </Board>
     </main>
