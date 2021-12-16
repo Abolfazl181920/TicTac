@@ -7,6 +7,14 @@ function App() {
     <main>
       <Board>
         <Square />
+        <Square />
+        <Square />
+        <Square />
+        <Square />
+        <Square />
+        <Square />
+        <Square />
+        <Square />
       </Board>
     </main>
   );
