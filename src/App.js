@@ -19,7 +19,11 @@ const App = () => {
     <main>
       <Board>
         {
-          squares.map((square,index) => <Square onClick={() => handleSquareClick(index)} />)
+          squares.map((square,index) =>
+          <Square
+            x = {Square === 'x' ? 1 : 0}
+            o = {Square === 'o' ? 1 : 0}
+            onClick={() => handleSquareClick(index)} />)
         }
       </Board>
     </main>
