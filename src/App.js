@@ -3,10 +3,12 @@ import Board from './Board';
 import Square from './Square';
 import { useState } from 'react';
 
+const defaultSquares = () => new Array(arrayLength: 9);
+
 const App = () => {
 
-  const [squares, setSquares] = useState();
-  
+  const [squares, setSquares] = useState(defaultSquares());
+
   return (
     <main>
       <Board>
