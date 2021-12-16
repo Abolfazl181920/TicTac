@@ -3,7 +3,7 @@ import Board from './Board';
 import Square from './Square';
 import { useState } from 'react';
 
-const defaultSquares = () => new Array(arrayLength: 9);
+const defaultSquares = () => (new Array(9)).fill(null);
 
 const App = () => {
 
@@ -12,15 +12,9 @@ const App = () => {
   return (
     <main>
       <Board>
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
+        {
+          squares.map(square => <Square />)
+        }
       </Board>
     </main>
   );
