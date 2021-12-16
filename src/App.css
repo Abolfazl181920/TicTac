@@ -1,3 +1,16 @@
-.App {
-  text-align: center;
+body {
+  background-color: #123;
+  color: #fff
+}
+
+main {
+  width: 300px;
+  margin: 50px auto 0;
+}
+
+div.board {
+  display: flex;
+  border: 2px solid #fff;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
