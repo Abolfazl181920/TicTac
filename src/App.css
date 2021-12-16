@@ -1,3 +1,4 @@
+/* root vars */
 :root {
   --white: #fff;
   --black: #123;
@@ -8,6 +9,7 @@ body {
   color: var(--white);
 }
 
+/* main in Board.js */
 main {
   width: 300px;
   margin: 50px auto 0;
@@ -20,6 +22,7 @@ div.board {
   grid-template-rows: 1fr 1fr 1fr;
 }
 
+/* square in Square.js */
 div.square {
   width: 100px;
   height: 100px;
